@@ -12,26 +12,44 @@
             padding: 0;
             display: flex;
             background-color: #f4f4f9;
-        }
-        
-        header {
-            background-color: #4CAF50;
+            background-image: url('https://www.example.com/your-business-image.jpg'); /* Replace with actual URL of business image */
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 20px 30px;
+            height: 100vh;
+        }
+
+        header {
             text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
             width: 100%;
         }
 
-        nav {
-            background-color: #333;
-            padding: 20px;
-            width: 250px;
-            height: 100vh;
-            color: white;
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .container {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            flex: 1;
+            margin-top: 30px;
+        }
+
+        nav {
+            background-color: #003366;
+            width: 250px;
+            padding: 20px;
+            color: white;
+            height: 100%;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
@@ -40,36 +58,26 @@
             text-decoration: none;
             font-size: 18px;
             margin: 10px 0;
+            display: block;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
         nav a:hover {
-            background-color: #575757;
-        }
-
-        .container {
-            display: flex;
-            flex: 1;
+            background-color: #FF5733; /* Red for hover effect */
         }
 
         .content {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for content */
             margin-left: 250px;
             padding: 30px;
-            width: 100%;
-            background-color: #fff;
-            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
             border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        h1, h2 {
-            font-weight: 500;
-            color: #333;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #4CAF50;
+            color: #003366; /* Blue for section titles */
             margin-top: 20px;
         }
 
@@ -87,22 +95,31 @@
         }
 
         .resource-list a {
-            color: #333;
+            color: #003366;
             font-size: 16px;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .resource-list a:hover {
-            color: #4CAF50;
+            color: #FF5733; /* Red for hover effect */
         }
 
         footer {
-            background-color: #333;
+            background-color: #003366;
             color: white;
             text-align: center;
             padding: 15px;
             margin-top: 30px;
+        }
+
+        footer a {
+            color: #FF5733; /* Red for footer links */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
         }
     </style>
 </head>
